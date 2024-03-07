@@ -438,6 +438,7 @@ img{
 .event_hero{
 	padding: 25px 25px 25px 0;
 	box-shadow: 12px 22px 33px 5px #dcdcdc;
+	position: relative;
 }
 .event_left{
 	display: flex;
@@ -459,14 +460,28 @@ img{
 	font-weight: 800;
 	text-transform: uppercase;
 }
-.event_btn1 a{
+/* .event_btn1 a{
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
 	background-color: #dcdcdc;
 	display: inline-block;
 }
-.event_btn1 a:hover{
+.event_btn1 a:hover,.active{
+	background-color: #ffc045;
+} */
+.event_btn1{
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background-color: #dcdcdc;
+	display: inline-block;
+}
+.event_btn1:hover{
+	background-color: #ffc045;
+	cursor: pointer;
+}
+.active{
 	background-color: #ffc045;
 }
 .event_btn1{
@@ -481,6 +496,19 @@ img{
 	padding: 10px 0 35px 0;
 	max-width: 87%;
 }
+.event_slide{
+	display: none;
+}
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+	from {opacity: .2} 
+	to {opacity: 1}
+}
+
 
 /* Booking CSS */
 
